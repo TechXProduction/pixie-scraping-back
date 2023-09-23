@@ -1,4 +1,4 @@
-const puppeteer = require("puppeteer");
+/* const puppeteer = require("puppeteer");
 const { Acto } = require('../db');
 
 // fijarse situaciones de corte de las func  ya ta
@@ -150,28 +150,28 @@ async function navegarYPersistirDatos(
     });
     await page.waitForSelector("#select2-IdUnidad-container");
     const opciones = await page.$$(".select2-results__option");
-   /*  for (const opcion of opciones) {
+    for (const opcion of opciones) {
       const textoOpcion = await page.evaluate((el) => el.textContent, opcion);
       if (textoOpcion.includes(juzgado)) {
         await opcion.click();
         break;
       }
-    } */
+    } 
 
-    /* await page.select("#Tipo", "2");
+    await page.select("#Tipo", "2");
     await page.type("#Asunto", numeroExpediente);
-    await page.type("#Anio", año); */
+    await page.type("#Anio", año); 
     await page.click(".boton.btnBuscar");
     await page.waitForSelector("#container");
     //   await page.screenshot({ path: `captura_${juzgado}.png` });
     const data = await extraerDatos(page);
     const mappedResults = mapResponse(data);
-    /* data.map(async(dataInser) => {
+    data.map(async(dataInser) => {
       if(dataInser.length > 0){
         await Acto.create({ secretaria: dataInser[1], asunto: dataInser[2], partes: dataInser[3], sintesis: dataInser[4], fecha: dataInser[0]});
       }
-    }) */
-    /* await Acto.create({ secretaria: dataInser[1], asunto: dataInser[2], partes: dataInser[3], sintesis: dataInser[4], fecha: dataInser[0]}); */
+    }) 
+    await Acto.create({ secretaria: dataInser[1], asunto: dataInser[2], partes: dataInser[3], sintesis: dataInser[4], fecha: dataInser[0]}); 
     
 
     return mappedResults;
@@ -243,3 +243,4 @@ function buildValidationName(nombre) {
 }
 
 module.exports = HacerBusqueda;
+ */

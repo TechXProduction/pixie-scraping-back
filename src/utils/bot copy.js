@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+/*  const puppeteer = require('puppeteer'); 
 
 const HacerBusqueda = async (
  juzgado,
@@ -8,12 +8,12 @@ const HacerBusqueda = async (
  check,
 ) => {
  try {
-  const browser = await puppeteer.launch({
+   const browser = await puppeteer.launch({
    headless: 'new',
    args: ['--disable-gpu', '--disable-dev-shm-usage', '--no-sandbox'],
   });
-
-  const page = await browser.newPage();
+ 
+   const page = await browser.newPage(); 
 
   switch (check) {
    case 1:
@@ -208,3 +208,4 @@ function buildValidationName(nombre) {
 }
 
 module.exports = HacerBusqueda;
+ */
