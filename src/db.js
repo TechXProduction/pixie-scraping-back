@@ -11,7 +11,7 @@ const { POSTGRES_URL } = process.env;
 //seteamos las cosas
 let sequelize =
 new Sequelize(
-     `postgres://pixie:idgEDLlJ9QxxW7AlkD7gojAV3d0lRFzA@dpg-ck7ior7q54js73ft3a80-a.oregon-postgres.render.com/pixie_5n7g`,
+     `postgres://pixie:idgEDLlJ9QxxW7AlkD7gojAV3d0lRFzA@dpg-ck7ior7q54js73ft3a80-a.oregon-postgres.render.com/pixie_5n7g?sslmode=require`,
      /* { dialectModule: require('pg') },
      */);
 
