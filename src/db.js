@@ -8,12 +8,12 @@ const { POSTGRES_URL } = process.env;
 
 
 // Seteamos la Base de datos con sus configuraciones
-
+//seteamos las cosas
 let sequelize =
 new Sequelize(
-     `postgres://default:9LUFc0xpbkrI@ep-morning-bush-38405030-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?sslmode=require`,
-     { dialectModule: require('pg') },
-    );
+     `postgres://pixie:idgEDLlJ9QxxW7AlkD7gojAV3d0lRFzA@dpg-ck7ior7q54js73ft3a80-a.oregon-postgres.render.com/pixie_5n7g`,
+     /* { dialectModule: require('pg') },
+     */);
 
 const basename = path.basename(__filename);
 
