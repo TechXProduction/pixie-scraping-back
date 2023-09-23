@@ -12,7 +12,7 @@ const { POSTGRES_URL } = process.env;
 let sequelize =
 new Sequelize(
      `postgres://default:Pe5NxWbEB8gn@ep-weathered-truth-74233848-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?sslmode=require`,
-     { logging: false, native: false },
+     { dialectModule: require('pg') },
     );
 
 const basename = path.basename(__filename);
