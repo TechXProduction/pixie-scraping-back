@@ -4,8 +4,7 @@
  "description": "Pixie Back",
  "main": "index.js",
  "scripts": {
-  "start": "nodemon  node index.js --name pixie --watch",
-  "dev": "pm2 start index.js --name pixie --watch",
+  "start": "pm2 start index.js --name pixie --watch",
   "test": "echo \"Error: no test specified\" && exit 1"
  },
  "author": "",
